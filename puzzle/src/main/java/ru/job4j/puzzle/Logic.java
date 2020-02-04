@@ -76,7 +76,7 @@ public class Logic {
             if (table[i][0] == 1 || table[0][i] == 1) {
                 result1 = table[i][0] == 1;
                 result2 = table[0][i] == 1;
-                for (int j = 1; j < table.length; j++) {
+                for (int j = 1; (j < table.length && !result); j++) {
                     if (table[i][j] != 1) result1 = false;
                     if (table[j][i] != 1) result2 = false;
                     if (!(result1 || result2)) break;
