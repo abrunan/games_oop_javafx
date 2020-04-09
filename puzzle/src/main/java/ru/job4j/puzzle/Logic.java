@@ -83,9 +83,7 @@ public class Logic {
                 }
                 result = result1 || result2;
             }
-
         }
-
         return result;
     }
 
