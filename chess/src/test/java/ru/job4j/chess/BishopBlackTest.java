@@ -1,4 +1,4 @@
-package ru.job4j;
+package ru.job4j.chess;
 
 import org.junit.After;
 import org.junit.Before;

@@ -45,8 +45,8 @@ public class Logic {
 
     private boolean isWayFree(Cell[] steps) {
         boolean isFree = true;
-        for (int i = 1; i < steps.length; i++) {
-            if (figures[findBy(steps[i])] != null) {
+        for (Cell step : steps) {
+            if (findBy(step) != -1) {
                 isFree = false;
                 break;
             }
